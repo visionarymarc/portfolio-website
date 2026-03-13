@@ -334,7 +334,7 @@ These resources were used to review HTML, CSS, and JavaScript syntax and best pr
 
 # Live Website
 
-[GitHub Pages Link](https://visionarymarc.github.io/portfolio-website)
+[GitHub Pages Link](https://visionarymarc.github.io/portfolio-website/)
 
 ---
 
