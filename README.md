@@ -307,6 +307,19 @@ The goal of the technical implementation was to keep the code simple, readable, 
 
 ---
 
+# Visual Design (Wireframe)
+
+A wireframe was created during the planning stage to outline the layout and structure of the website before development began. The wireframe helped determine the placement of major sections such as the navigation bar, introduction section, skills overview, projects section, and footer.
+
+The wireframe served as a visual guide to ensure the layout remained organized and consistent throughout development.
+
+Example of homepage Skeleton:
+
+![Wireframe](wireframe.png)
+
+---
+
+
 # External Resources
 
 The following resources were used during the development of this project:
