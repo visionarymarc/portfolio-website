@@ -1,8 +1,8 @@
 # Personal Portfolio Website
 
 **Marcus Valbrun**  
-BCS 377 – Web Development Frameworks  
-Project 1
+BCS 350 – Web Database Development 
+Mid Semester Project 
 
 ---
 
