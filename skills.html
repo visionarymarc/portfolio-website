@@ -1,73 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills | Marcus Valbrun</title>
-<link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-<header>
-<nav class="top-nav">
-
-<a href="index.html" class="nav-logo">Marcus Valbrun</a>
-
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="skills.html" class="active">Skills</a>
-<a href="contact.html">Contact</a>
-</div>
-
-</nav>
-</header>
-
-<main class="container">
-
-<section class="section">
-
-<h1>Technical Skills</h1>
-
-<h2>Languages</h2>
-
-<ul>
-<li>C</li>
-<li>C++</li>
-<li>Java</li>
-<li>Python</li>
-<li>SQL</li>
-</ul>
-
-<h2>Tools</h2>
-
-<ul>
-<li>Git</li>
-<li>Visual Studio Code</li>
-<li>Eclipse</li>
-<li>Microsoft 365</li>
-</ul>
-
-<h2>Systems</h2>
-
-<ul>
-<li>Linux</li>
-<li>Windows</li>
-</ul>
-
-</section>
-
-</main>
-
-<footer class="footer">
-
-<p>© 2026 Marcus Valbrun</p>
-
-</footer>
-
-<button id="topBtn">Go To Top</button>
-<script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Marcus Valbrun — Computer Science student, aspiring project manager, and developer open to application development, backend leadership, and IT opportunities."
+    />
+    <title>Skills | Marcus Valbrun</title>
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-wrap" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Marcus Valbrun home"
+          >mv<span>.</span></a
+        >
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="projects.html">Projects</a
+          ><a href="skills.html" aria-current="page">Skills</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch color theme"
+          hidden
+        >
+          Light mode <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </header>
+    <main id="main" class="container">
+      <section class="page-intro">
+        <p class="eyebrow">03 / My toolkit</p>
+        <h1>
+          Code. Communicate.<br /><span class="accent-word"
+            >Keep learning.</span
+          >
+        </h1>
+        <p class="lead">
+          A technical foundation shaped by coursework, web projects, IT support,
+          and student leadership.
+        </p>
+      </section>
+      <section class="section detail-grid">
+        <article class="card">
+          <span class="card-number">01 / Development</span>
+          <h2>Languages &amp; the web</h2>
+          <p>
+            Structured programming, data structures, and responsive interfaces.
+          </p>
+          <div class="tags">
+            <span>Java</span><span>C / C++</span><span>Python</span
+            ><span>SQL</span><span>HTML</span><span>CSS</span
+            ><span>JavaScript</span>
+          </div>
+        </article>
+        <article class="card">
+          <span class="card-number">02 / Workflow</span>
+          <h2>Tools &amp; systems</h2>
+          <p>Tools I use to write code, organize work, and troubleshoot.</p>
+          <div class="tags">
+            <span>Git</span><span>Visual Studio Code</span><span>Eclipse</span
+            ><span>Microsoft 365</span><span>Windows</span><span>Linux</span>
+          </div>
+        </article>
+        <article class="card">
+          <span class="card-number">03 / Supporting people</span>
+          <h2>Hands-on IT</h2>
+          <p>
+            Level 1 support, hardware replacement, system configuration,
+            customer consultation, and troubleshooting electronic components.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-number">04 / Growing toward leadership</span>
+          <h2>People &amp; coordination</h2>
+          <p>
+            Student mentoring, event coordination, and communicating technical
+            solutions. I’m building on these experiences as I work toward
+            project management.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div>
+        <a class="brand" href="index.html">mv<span>.</span></a>
+        <p>Curious about the code. Focused on the people.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/visionarymarc"
+          >GitHub
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg></a
+        ><a href="https://www.linkedin.com/in/marcus-valbrun-477127210/"
+          >LinkedIn
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg></a
+        ><a href="mailto:valbrunmarcus@gmail.com"
+          >Email
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg
+        ></a>
+      </div>
+      <p class="fine-print">© 2026 Marcus Valbrun · Fall 2026 edition</p>
+    </footer>
+    <button id="topBtn" type="button" aria-label="Back to top" hidden>↑</button>
+  </body>
 </html>

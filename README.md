@@ -1,3 +1,99 @@
+# UPDATE Fall 2026 Midsemester Project
+
+**Marcus Valbrun · Personal Portfolio Website**
+
+This edition revises my portfolio from the previous semester. The original planning document is preserved below as a historical record; this update describes the current website and supersedes the earlier career, design, and interaction descriptions.
+
+## Project overview and target audience
+
+My goal is now to ultimately become a **project manager**, while remaining open to **application development, backend management, and IT** roles. The site is intended for employers, internship recruiters, professors, and peers who want to understand both my technical foundation and my growing interest in coordination and leadership. I am pursuing a BS in Computer Science at Farmingdale State College, with graduation expected in **December 2026**, as listed in the supplied resume.
+
+## Content strategy and information organization
+
+The five pages remain Home, About, Projects, Skills, and Contact. The resume is a linked PDF rather than a separate page. Each page now has consistent navigation, a current-page indicator, a theme toggle, social links, and a footer.
+
+- **Home:** a new introduction connecting development and project management, recent project highlights, career direction, and a contact invitation.
+- **About:** revised career goals, education, IT support at Staples, student mentoring, and event coordination. Graduation information now follows the supplied resume; unsupported GPA claims were removed.
+- **Projects:** PlayThis and lostnfound join the Java Data Structures & Algorithms Visualizer and C Online Shopping Simulation.
+- **Skills:** programming and web technologies, tools and operating systems, practical IT support, and experience communicating and coordinating with people. Project management is an aspiration, not a claim of an established professional title.
+- **Contact:** opportunities across the stated career interests, email and social links, plus an email-draft helper.
+- **Resume:** replaced the downloadable file with the supplied ValbrunResume.pdf. Its contents are not rewritten; the website includes newer projects and career goals beyond that document.
+
+**PlayThis** is a fun HTML/CSS/JavaScript playlist website using Apple’s music API and listener input. [Live website](https://visionarymarc.github.io/PlayThis) · [Source](https://github.com/visionarymarc/PlayThis).
+
+**lostnfound** is my ongoing collaborative CSC 490 senior project for Fall 2026 at Farmingdale State College. It is a campus/community lost-and-found app using React, TypeScript, and Firebase, with item posts, profiles, and private chats. The team uses Agile/Scrum. The portfolio describes my team participation without inventing individual task ownership or claiming that planned marketplace features are complete. [Repository](https://github.com/visionarymarc/lost-n-found).
+
+## Visual design
+
+The new design uses oversized headings, italic serif emphasis, violet and lime project artwork, rounded panels, and an editorial layout. Dark mode pairs charcoal surfaces with soft violet accents; light mode pairs warm off-white surfaces with a darker violet accent for readable text. Body text uses system sans-serif fonts, labels use monospace, and highlighted words use Georgia. No external font download or UI framework is required.
+
+The homepage flows from a large introduction and career note to a focus strip, recent projects, a short biography, and a contact invitation. Project artwork is drawn using CSS rather than third-party images. Responsive grids collapse into a single column on smaller screens, while navigation wraps onto its own row. Hover transforms, an animated asterisk, and playlist bars add movement without hiding content.
+
+### Updated wireframe
+
+```text
+DESKTOP
+┌───────────────────────────────────────────────────────┐
+│ mv.       Home About Projects Skills Contact   Theme   │
+├───────────────────────────────────────────────────────┤
+│ Introduction / large headline     Career note          │
+│ Short bio / Projects + Resume     Rotating asterisk    │
+├───────────────────────────────────────────────────────┤
+│ Project management / Application development / IT      │
+├───────────────────────────┬───────────────────────────┤
+│ PlayThis artwork + detail │ lostnfound artwork + detail│
+├───────────────────────────┴───────────────────────────┤
+│ About heading             Career direction             │
+│ Contact invitation / button                            │
+│ Footer / GitHub / LinkedIn / Email                      │
+└───────────────────────────────────────────────────────┘
+MOBILE: navigation wraps; hero, project cards, and about
+content stack vertically; all content remains available.
+```
+
+The original `wireframe.png` below is retained as the previous semester’s planning artifact. The diagram above documents the updated layout.
+
+## Interaction and accessibility
+
+- **Light/dark mode:** starts with the system preference and remembers an explicit choice in localStorage across pages and visits. If storage is unavailable, toggling still works on the current page. The button’s accessible label describes its next action.
+- **Back to top:** appears after scrolling and returns to the top. Reduced-motion users get immediate scrolling.
+- **Contact helper:** labeled required fields validate name, email, and message. Submitting generates an encoded `mailto:` draft link; the visitor then opens that link in their email app. The website has no mail backend, stores no form data, and never claims a message was sent. The direct email link works without JavaScript; the helper button stays disabled when JavaScript is unavailable.
+- **Motion:** CSS keyframes animate decorative elements; `prefers-reduced-motion` disables animations, transitions, and smooth scrolling. All text remains visible without JavaScript.
+- **Keyboard access:** skip-to-content link, visible focus outlines, native buttons, semantic landmarks, linked form labels, and current-page navigation indicators.
+- **Feedback:** hover/focus styling, updated theme button text, native form validation, and a polite status message for the email draft action.
+
+## Technical overview and milestones
+
+1. Reviewed the prior site, assignment reference, supplied resume, and current project repositories.
+2. Updated career positioning, education, projects, and resume download.
+3. Rebuilt the shared responsive CSS and consistent five-page layout.
+4. Added early theme initialization in `js/theme.js` and theme, scrolling, and email-draft behavior in `js/script.js`.
+5. Validated pages, local resources, desktop/mobile layout, theme persistence, reduced motion, and contact behavior in Chromium; all checks passed.
+
+This remains a static HTML/CSS/JavaScript website suitable for GitHub Pages, with no install or build step. For local development, run `python3 -m http.server 8000` from the repository root. Publishing requires committing/pushing the changes to the branch configured for GitHub Pages; editing the checkout alone does not update the live site.
+
+## Validation results
+
+Chromium checks passed on all five pages at 1440, 768, 390, and 320 pixels wide, with no horizontal overflow. All referenced local resources returned HTTP 200 and the resume contained a valid PDF header. Theme switching persisted across navigation and reload. Reduced-motion settings disabled decorative animation, and the back-to-top control returned to the top. Contact checks covered required-field validation, encoded draft contents, and truthful status feedback. The no-JavaScript fallback kept content readable and the email helper disabled. No browser JavaScript errors were observed. Desktop and mobile homepage screenshots were visually reviewed.
+
+These checks validate the local site, not a deployment or actual email delivery. PlayThis’s source was reviewed through Git access; its hosted page returned an access error from the setup environment, so external service availability was not validated.
+
+## Resources and references for this update
+
+- Supplied Portfolio Website Project assignment: used as reference for documentation, content, design, and accessibility criteria; not treated as a request to submit or publish anything.
+- Supplied ValbrunResume.pdf: education, experience, skills, and downloadable resume.
+- [PlayThis source](https://github.com/visionarymarc/PlayThis) and [lostnfound source](https://github.com/visionarymarc/lost-n-found): project descriptions.
+- [MDN: CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [MDN: prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+- [MDN: localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [GitHub Pages documentation](https://docs.github.com/en/pages)
+
+---
+
+# Previous semester: original design document
+
+The answers below describe the original submission and are preserved for comparison. See the Fall 2026 update above for current decisions.
+
 # Personal Portfolio Website
 
 **Marcus Valbrun**  

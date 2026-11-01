@@ -1,73 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects | Marcus Valbrun</title>
-<link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-<header>
-<nav class="top-nav">
-
-<a href="index.html" class="nav-logo">Marcus Valbrun</a>
-
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html" class="active">Projects</a>
-<a href="skills.html">Skills</a>
-<a href="contact.html">Contact</a>
-</div>
-
-</nav>
-</header>
-
-<main class="container">
-
-<section class="section">
-
-<h1>Projects</h1>
-
-<div class="project-card">
-
-<h3>Data Structures & Algorithms Visualizer</h3>
-
-<p>
-Java application that visualizes algorithms and data structures such as
-arrays, trees, graphs, sorting, and searching.
-</p>
-
-<p class="tech">Technologies: Java</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Online Shopping Simulation</h3>
-
-<p>
-C program that parses product data into a linked list and simulates
-a basic shopping experience with inventory management.
-</p>
-
-<p class="tech">Technologies: C, Linked Lists</p>
-
-</div>
-
-</section>
-
-</main>
-
-<footer class="footer">
-
-<p>© 2026 Marcus Valbrun</p>
-
-</footer>
-
-<button id="topBtn">Go To Top</button>
-<script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Marcus Valbrun — Computer Science student, aspiring project manager, and developer open to application development, backend leadership, and IT opportunities."
+    />
+    <title>Projects | Marcus Valbrun</title>
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-wrap" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Marcus Valbrun home"
+          >mv<span>.</span></a
+        >
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="projects.html" aria-current="page">Projects</a
+          ><a href="skills.html">Skills</a><a href="contact.html">Contact</a>
+        </div>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch color theme"
+          hidden
+        >
+          Light mode <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </header>
+    <main id="main" class="container">
+      <section class="page-intro">
+        <p class="eyebrow">02 / Selected projects</p>
+        <h1>
+          Learning by<br /><span class="accent-word">making things.</span>
+        </h1>
+        <p class="lead">
+          From interactive web experiences to data structures, these projects
+          reflect my growing technical interests.
+        </p>
+      </section>
+      <section class="section project-grid">
+        <article class="project-card">
+          <div class="project-art play-art" aria-hidden="true">
+            <span class="art-caption">PLAYTHIS / FIND YOUR FREQUENCY</span>
+            <div class="equalizer">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <strong>your vibe.<br />your playlist.</strong
+            ><span class="art-bottom"
+              >MOOD → MUSIC
+              <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 13 13 3M3 3h10v10" /></svg
+            ></span>
+          </div>
+          <div class="project-copy">
+            <p class="eyebrow">01 / Web experience</p>
+            <h3>PlayThis</h3>
+            <p>
+              A fun HTML, CSS, and JavaScript website that uses Apple’s music
+              API to build a playlist from your mood, genres, artists, and
+              songs.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a class="text-link" href="https://visionarymarc.github.io/PlayThis"
+              >Explore PlayThis
+              <span aria-hidden="true"
+                ><svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M3 13 13 3M3 3h10v10" /></svg></span
+            ></a>
+            ·
+            <a
+              class="text-link"
+              href="https://github.com/visionarymarc/PlayThis"
+              >Source
+              <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 13 13 3M3 3h10v10" /></svg
+            ></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-art lost-art" aria-hidden="true">
+            <span class="art-caption">LOSTNFOUND / WORK IN PROGRESS</span>
+            <div class="orbit"></div>
+            <strong
+              >lost<span>n</span>found<span class="asterisk">✳</span></strong
+            ><span class="art-bottom">CURRENT CHAPTER / 2026</span>
+          </div>
+          <div class="project-copy">
+            <p class="eyebrow">02 / In progress</p>
+            <h3>lostnfound</h3>
+            <p>
+              A collaborative CSC 490 senior project at Farmingdale State
+              College: a campus and community lost-and-found app with item
+              posts, profiles, and private chats. I’m contributing as part of
+              the Fall 2026 team.
+            </p>
+            <div class="tags">
+              <span>React / TypeScript</span><span>Firebase</span
+              ><span>Agile / Scrum</span>
+            </div>
+            <a
+              class="text-link"
+              href="https://github.com/visionarymarc/lost-n-found"
+              >Explore the repository
+              <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 13 13 3M3 3h10v10" /></svg
+            ></a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="card-number">03 / Java · Academic project</span>
+          <h2>Data Structures &amp; Algorithms Visualizer</h2>
+          <p>
+            A GUI-based Java application that visualizes arrays, trees, graphs,
+            sorting, and searching, with runtime comparisons for larger
+            datasets.
+          </p>
+          <div class="tags">
+            <span>Java</span><span>Algorithms</span><span>GUI</span>
+          </div>
+        </article>
+        <article class="card">
+          <span class="card-number">04 / C · Academic project</span>
+          <h2>Online Shopping Simulation</h2>
+          <p>
+            A C program that parses product data into a linked list for
+            inventory management, item lookup, and an interactive shopping cart.
+          </p>
+          <div class="tags">
+            <span>C</span><span>Linked lists</span><span>Data management</span>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div>
+        <a class="brand" href="index.html">mv<span>.</span></a>
+        <p>Curious about the code. Focused on the people.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/visionarymarc"
+          >GitHub
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg></a
+        ><a href="https://www.linkedin.com/in/marcus-valbrun-477127210/"
+          >LinkedIn
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg></a
+        ><a href="mailto:valbrunmarcus@gmail.com"
+          >Email
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg
+        ></a>
+      </div>
+      <p class="fine-print">© 2026 Marcus Valbrun · Fall 2026 edition</p>
+    </footer>
+    <button id="topBtn" type="button" aria-label="Back to top" hidden>↑</button>
+  </body>
 </html>

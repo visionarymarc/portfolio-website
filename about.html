@@ -1,92 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Marcus Valbrun</title>
-<link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-<header>
-<nav class="top-nav">
-
-<a href="index.html" class="nav-logo">Marcus Valbrun</a>
-
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="about.html" class="active">About</a>
-<a href="projects.html">Projects</a>
-<a href="skills.html">Skills</a>
-<a href="contact.html">Contact</a>
-</div>
-
-</nav>
-</header>
-
-<main class="container">
-
-<section class="section">
-
-<h1>About Me</h1>
-
-<p>
-I am a Computer Science student at Farmingdale State College with a strong
-interest in backend development and system design.
-</p>
-
-<p>
-My academic experience focuses on data structures, algorithms, and
-structured programming using languages such as Java, C, and Python.
-</p>
-
-<p>
-I enjoy solving complex logical problems and building efficient systems
-that manage and process data effectively.
-</p>
-
-</section>
-
-<section class="section">
-
-<h2>Education</h2>
-
-<div class="card">
-
-<h3>Farmingdale State College</h3>
-
-<p>Bachelor of Science – Computer Science</p>
-
-<p>Expected May 2026</p>
-
-<p>GPA: 4.0</p>
-
-</div>
-
-<div class="card">
-
-<h3>Nassau Community College</h3>
-
-<p>Associate of Science – Computer Science</p>
-
-<p>Graduated May 2024</p>
-
-<p>GPA: 3.7</p>
-
-</div>
-
-</section>
-
-</main>
-
-<footer class="footer">
-
-<p>© 2026 Marcus Valbrun</p>
-
-</footer>
-
-<button id="topBtn">Go To Top</button>
-<script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Marcus Valbrun — Computer Science student, aspiring project manager, and developer open to application development, backend leadership, and IT opportunities."
+    />
+    <title>About | Marcus Valbrun</title>
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-wrap" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Marcus Valbrun home"
+          >mv<span>.</span></a
+        >
+        <div class="nav-links">
+          <a href="index.html">Home</a
+          ><a href="about.html" aria-current="page">About</a
+          ><a href="projects.html">Projects</a><a href="skills.html">Skills</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch color theme"
+          hidden
+        >
+          Light mode <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </header>
+    <main id="main" class="container">
+      <section class="page-intro">
+        <p class="eyebrow">01 / The person behind the projects</p>
+        <h1>
+          Technical curiosity.<br /><span class="accent-word"
+            >Shared progress.</span
+          >
+        </h1>
+        <p class="lead">
+          I’m Marcus, a Computer Science student interested in both building
+          software and helping people bring their ideas to life.
+        </p>
+      </section>
+      <section class="section two-column">
+        <h2>Where I’m headed</h2>
+        <div>
+          <p class="lead">
+            My ultimate goal is to become a project manager who understands the
+            technical work behind a team’s decisions.
+          </p>
+          <p>
+            I’m also open to application development, backend management, and IT
+            roles. Working directly with code and supporting real users gives me
+            a foundation I want to carry into future leadership opportunities.
+          </p>
+          <p>
+            My recent work includes PlayThis and the ongoing lostnfound project,
+            alongside academic projects in Java and C.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <p class="eyebrow">Learning &amp; experience</p>
+        <h2>A foundation to build on.</h2>
+        <div class="detail-grid">
+          <article class="card">
+            <span class="card-number">01 / Education</span>
+            <h3>Farmingdale State College</h3>
+            <p>BS in Computer Science · Expected December 2026</p>
+            <p>
+              Coursework includes advanced programming, operating systems, and
+              data structures &amp; algorithms.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-number">02 / Education</span>
+            <h3>Nassau Community College</h3>
+            <p>AS in Computer Science · May 2024</p>
+            <p>Magna cum Laude and Dean’s List honors.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">03 / IT experience</span>
+            <h3>Tech Associate · Staples</h3>
+            <p>
+              Level 1 tech support, system configuration, data management, and
+              hardware replacement. Helping customers find practical technology
+              solutions.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-number">04 / Leadership</span>
+            <h3>Communication in practice</h3>
+            <p>
+              Mentored groups of 15 students through S.A.I.N.T.S. and helped
+              coordinate 5–6 events and weekly activities with the Caribbean
+              Student Association.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div>
+        <a class="brand" href="index.html">mv<span>.</span></a>
+        <p>Curious about the code. Focused on the people.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/visionarymarc"
+          >GitHub
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg></a
+        ><a href="https://www.linkedin.com/in/marcus-valbrun-477127210/"
+          >LinkedIn
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg></a
+        ><a href="mailto:valbrunmarcus@gmail.com"
+          >Email
+          <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 13 13 3M3 3h10v10" /></svg
+        ></a>
+      </div>
+      <p class="fine-print">© 2026 Marcus Valbrun · Fall 2026 edition</p>
+    </footer>
+    <button id="topBtn" type="button" aria-label="Back to top" hidden>↑</button>
+  </body>
 </html>
