@@ -72,6 +72,10 @@ The original `wireframe.png` below is retained as the previous semester’s plan
 
 This remains a static HTML/CSS/JavaScript website suitable for GitHub Pages, with no install or build step. For local development, run `python3 -m http.server 8000` from the repository root. Publishing requires committing/pushing the changes to the branch configured for GitHub Pages; editing the checkout alone does not update the live site.
 
+## GitHub Pages asset caching
+
+All five pages use content-versioned CSS and JavaScript URLs so a browser with last semester’s files cached requests the updated assets. When those assets change, update their `?v=` values to the first 12 characters of the file’s SHA-256 hash. Paths remain relative so the site works under the GitHub Pages `/portfolio-website/` path.
+
 ## Validation results
 
 Chromium checks passed on all five pages at 1440, 768, 390, and 320 pixels wide, with no horizontal overflow. All referenced local resources returned HTTP 200 and the resume contained a valid PDF header. Theme switching persisted across navigation and reload. Reduced-motion settings disabled decorative animation, and the back-to-top control returned to the top. Contact checks covered required-field validation, encoded draft contents, and truthful status feedback. The no-JavaScript fallback kept content readable and the email helper disabled. No browser JavaScript errors were observed. Desktop and mobile homepage screenshots were visually reviewed.
